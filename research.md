@@ -27,7 +27,7 @@ My research is mainly focused on operator algebras and their applications to geo
 ### Theses
 
 <ol>
-    <li>Michael Francis <em>Groupoids and Algebras of Certain Singular Foliations with Finitely Many Leave</em>, PhD Thesis (2021). <a href="https://etda.libraries.psu.edu/catalog/24364mjf5726">[Penn State library]</a></li>  
+  <li>Michael Francis <em>Groupoids and Algebras of Certain Singular Foliations with Finitely Many Leaves</em>, PhD Thesis (2021). <a href="https://etda.libraries.psu.edu/catalog/24364mjf5726">[Penn State library]</a></li>  
   <li>Michael Francis <em>Traces, one-parameter flows and K-theory</em>, MSc Thesis (2014). <a href="https://dspace.library.uvic.ca/items/2335e9af-6b5d-4834-b877-47efda6e56cf">[UVic library]</a></li>  
 </ol>
 
