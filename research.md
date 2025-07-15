@@ -38,5 +38,6 @@ My research is mainly focused on operator algebras and their applications to geo
   <li>Michael Francis, <em>Darboux's theorem and Euler-like vector fields</em> (2018). <a href="https://mdfrancis.github.io/assets/writings/DarbouxEuler.pdf">[PDF]</a></li>
     <li>Michael Francis, <em>Introduction to C*-algebra homology theories</em> (2018). <a href="https://mdfrancis.github.io/assets/writings/CstarHomology.pdf">[PDF]</a></li>
   <li>Michael Francis, <em>Linear Galois Theory</em> (2018). <a href="https://mdfrancis.github.io/assets/writings/LinearGaloisTheory.pdf">[PDF]</a></li>
+  <li>Michael Francis, <em>Meeting notes from von Neumann algebra learning seminar</em> (2017). <a href="https://mdfrancis.github.io/WLS/WLS.html">[HTML]</a></li>
   <li>Michael Francis, <em>A first look at geometric groups theory</em> (2017). <a href="https://mdfrancis.github.io/assets/writings/GeomGrpThry.pdf">[PDF]</a></li>
 </ol>
