@@ -2,11 +2,13 @@
 layout: page
 title: Teaching
 ---
-***Fall 2025***
+#### Current Teaching
 
-Math 310: Real Analysis. Please go to LINK for course materials.
+Math 310: Real Analysis, MacEwan University, Fall 2025 
 
-#### Previous Teaching Experience
+Please sign in to mêskanâs to access course materials.
+
+#### Past Teaching Experience
 
 * Math 398: Independent Study: Group Theory,	MacEwan University, Spring 2025
 * Math 2156: Number Theory and Graph Theory, University of Western Ontario, Spring 2024
