@@ -22,7 +22,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   #- {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  #- {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
+  - {title: ORCID, icon: orcid, url: "https://orcid.org/0009-0007-4610-2263"}
   - {title: Github, icon: github, url: "https://github.com/mdfrancis/"}
   #- {title: Subscribe, icon: rss, url: "/feed.xml"}
 
