@@ -9,7 +9,8 @@ Description of research
 ### Publications and Preprints
 
 <ol reversed>
-  <li>Michael Francis, <em>A Dixmier-Malliavin theorem for Lie groupoids</em>, J. Lie Theory 32, no. 3, 879–898 (2022).</li>
+  <li>Michael Francis, <em>A Dixmier-Malliavin theorem for Lie groupoids</em>, J. Lie Theory 32, no. 3, 879–898 (2022).
+  <li>Michael Francis, <em>H-unitality of smooth groupoid algebras</em>, J. Noncommut. Geom. (2025)</li>
 </ol>
 
 
