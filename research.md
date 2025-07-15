@@ -18,7 +18,12 @@ Description of research
 
 ### Preprints
 
+  <li>Tatyana Barron and Michael Francis, <em>The Newlander-Nirenberg theorem for complex b-manifolds</em>. <a href="https://arxiv.org/abs/2310.08013">[arXiv]</a></li>  
+  <li>Michael Francis, <em>The smooth algebra of a one-dimensional singular foliation</em>. <a href="https://arxiv.org/abs/2011.08422">[arXiv]</a></li>
+  <li>Michael Francis, <em>Two topological uniqueness theorems for spaces of real numbers</em>. <a href="https://arxiv.org/abs/1210.1008">[arXiv]</a></li>
+</ol>
 
+### Other Writings
 
 <!--
 ### Projects
