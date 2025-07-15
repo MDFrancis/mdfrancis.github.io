@@ -9,7 +9,7 @@ Description of research
 ### Publications and Preprints
 
 <ol reversed>
-  <li>Michael Francis, <em>H-unitality of smooth groupoid algebras</em>, J. Noncommut. Geom. (2025).</li>  
+  <li>Michael Francis, <em>H-unitality of smooth groupoid algebras</em>, J. Noncommut. Geom. (2025). ([journal](https://ems.press/journals/jncg/articles/14298467); [arXiv](https://arxiv.org/abs/2307.00232))</li>  
   <li>Michael Francis, <em>On singular foliations tangent to a given hypersurface</em>, J. Noncommut. Geom. (2024).</li>
   <li>Tatyana Barron and Michael Francis, <em>On automorphisms of complex b<sup>k</sup>-manifolds</em>, Geometric Methods in Physics XL, 2024, pp. 199–207.</li>
   <li>Michael Francis, <em>A Dixmier-Malliavin theorem for Lie groupoids</em>, J. Lie Theory 32, no. 3, 879–898 (2022).</li>
