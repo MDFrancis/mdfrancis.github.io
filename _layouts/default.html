@@ -30,7 +30,10 @@
 {% endif %}
 
 <header>
-  <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
+  <a href="{{ "/" | relative_url }}" class="title" style="display: flex; align-items: center; gap: 10px;">
+    <img src="/assets/macewanlogo.png" alt="University Logo" style="height: 40px;">
+    <span>{{ site.title | escape }}</span>
+  </a>
   {% include menu.html menu=pages %}
 </header>
 
