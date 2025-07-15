@@ -34,5 +34,5 @@ My research is mainly focused on operator algebras and their applications to geo
 ### Other writings
 
 <ol>
-  <li>Michael Francis, <em>Elementary Number Theory Lecture Notes</em> (2023). <a href="/assets/writings/END.pdf">[PDF]</a></li>  
+  <li>Michael Francis, <em>Elementary Number Theory Lecture Notes</em> (2023). <a href="assets/writings/ENT.pdf">[PDF]</a></li>  
 </ol>
