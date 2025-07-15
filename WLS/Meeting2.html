@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Meeting 2</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+
+<body>
+
+<a name="top"></a>
+<h1>Meeting 2: Shiqi Liu</h1>
+
+
+<p><a href="WLS.html">Back to seminar page</a></p>
+
+
+<ul>
+<li> Proved that $L^\infty(X,\mu)$ is a von Neumann algebra on $L^2(X,\mu)$.
+<li> Definition of a factor: von Neumann algebra $M \subseteq B(H)$ whose centre $Z(M)$ is just the scalars $\mathbb{C}$. 
+<li> Proved that $B(H)$ is a factor.
+<li> Proved that (up to scaling), there is only one tracial functional on $M_n(\mathbb{C})$. "Tracial" means $\tau(xy)=\tau(yx)$ for all $x,y$.
+<li> Proved that $vN(\Gamma)$ is a factor when $\Gamma$ is an <i>infinite conjugacy class group</i> (icc group), that is a group all of whose conjugacy classes are infinite, except for $\{1\}$. In particular, $vN(F_n)$ is a factor where $F_n$ is the free group on $n \geq 2$ generators. 
+<li> Defined the trace on $vN(\Gamma)$. This is defined by the matrix coefficient $T \mapsto \langle   \epsilon_1,T\epsilon_1\rangle$ or, for that matter, $T \mapsto \langle \epsilon_\gamma,T  \epsilon_\gamma\rangle$ for any $\gamma \in \Gamma$, since the matrix of $T \in vN(\Gamma)$ is constant along diagonals. In other words, thinking of $T$ as a formal sum $\sum_{\gamma \in \Gamma} c_\gamma U_\gamma$, the trace is $T \mapsto c_1$. This is an example of a normal tracial state. We will talk more about "normal" functionals later.
+<li> Defined $\mathrm{II}_1$ factors. A $\mathrm{II}_1$ factor is a factor $M \subseteq B(H)$ which is infinite dimensional (as a vector space) and which admits a normal tracial state $\tau : M \to \mathbb{C}$. 
+</ul>
+
+<p>
+We ended with a long discussion of the following Exercise 3.3.9(iv) which was eventually resolved by consulting the book "A Hilbert Space Problem Book" by Halmos. The problem is to show that there is no nonzer, everywhere-defined linear functional $\tau : B(H) \to \mathbb{C}$, possibly discontinuous, satisfying $\tau(TS)=\tau(ST)$ for all $S,T \in B(H)$ (where $H$ is infinite dimensional). This follows from the fact that every operator in $B(H)$ can be written as the sum of two commutators. To see this, it suffices to show that if $T \in B(H)$ has $\ker(T)$ big (i.e. the same dimension as $H$) then $T$ is a commutator. In this case, one can write $\ker(T) = S_1 \oplus S_2 \oplus \ldots$ where each closed subspace $S_i$ has the same dimension as $H$. Express  $H$ as the direct sum $(\ker(T)^\bot \oplus S_1) \oplus S_2 \oplus S_3 \oplus S_4 \oplus \ldots$, noting all the factors are isomorphic to $H$. With respect to this decomposition,   $T$ looks like a block matrix
+$$\begin{pmatrix} A_0 & 0 & 0 & \ldots \\
+A_1 & 0 & 0 & \ldots \\
+A_2 & 0 & 0 & \ldots \\
+\vdots & \vdots & \vdots & \ddots \\
+\end{pmatrix}.$$
+Using this representation of $T$, we can find a way to express $T$ as a commutator of a shift operator, and some other operator. For full solution, see Problem 234 in the second edition of Halmos's book.
+</p>
+<p><a href="WLS.html">Back to seminar page</a></p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

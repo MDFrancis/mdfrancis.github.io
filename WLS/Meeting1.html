@@ -1,0 +1,94 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Meeting 1</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+
+<body>
+
+<a name="top"></a>
+<h1>Meeting 1: Rui Bao</h1>
+
+
+<p><a href="WLS.html">Back to seminar page</a></p>
+
+
+<h4>Topologies on $B(H)$:</h4>
+
+<p><img src="Topologies.png"></p>
+<ul>
+<li> Strong topology: $T_i \to_\text{sot} T$ if and only if $T_i v \to T v$ for all $v \in H$. 
+<li> Weak topology: $T_i \to_\text{wot} T$ if and only if $\langle u, T_i v \rangle \to \langle u, T v \rangle$ for all $u,v \in H$. Equivalently, $\mathrm{Tr}(T_iS) \to \mathrm{Tr}(TS)$ for every finite-rank operator $S=\sum_{n=1}^N |v_n\rangle \langle u_n |$. 
+<li> Ultrastrong topology: The strong topology which arises when we make $B(H)$ act diagonally on $H^\infty = \bigoplus_{n=1}^\infty H$. Thus, $T_i \to T$ in the ultrastrong topology if and only if $\sum_{n=1}^\infty \|(T_i - T) v_n\|^2 \to 0$ whenever $v_1,v_2,\ldots \in H$ have $\sum_{n=1}^\infty \|v_n\|^2 < \infty$, the point being that $(v_1,v_2,\ldots) \in H^\infty$. 
+<li> Ultraweak topology: The weak-$*$ topology coming from identifying $B(H)$ with the dual of the trace-class operators. Thus, $T_i \to T$ in the ultraweak topology if and only if $\mathrm{Tr}(T_iS) \to \mathrm{Tr}(TS)$ for every trace-class operator $S$. Alternatively, in same vein as the ultrastrong topology, we may think of the ultraweak topology as the weak topology which arises when we make $B(H)$ act diagonally on $H^\infty$. Thus, $T_i \to T$ in the ultraweak topology if and only if $\sum_{n=1}^\infty \langle u_n, T_i v_n \rangle \to \sum_{n=1}^\infty \langle u_n, T v_n\rangle$ whenever $v_1,v_2,\ldots \in H$ and $u_1,u_2,\ldots \in H$ have $\sum_{n=1}^\infty \|v_n\| < \infty$ and $\sum_{n=1}^\infty \|u_n\|^2 < \infty$. To see this equivalence, it helps to note that the trace-class operators $S:H \to H$ are precisely the ones which can be written as $S=\sum_{n=1}^\infty \lambda_n |v_n\rangle \langle u_n|$ where $\{v_n\}$ and $\{u_n\}$ are two orthonormal sets in $H$ and $\lambda_n > 0$ satisfy $\sum_{n=1}^\infty \lambda_n < \infty$. 
+</ul> 
+
+<h4>Von Neumann Bicommutant theorem</h4>
+
+<p><i>Theorem 1.1:</i> For a $*$-subalgebra $M$ of $B(H)$, the double commutant $M''$ coincides with the closure of $M$ in any one of the strong, weak, ultrastrong or ultraweak topologies.
+</p>
+
+<p><i>Proof:</i> Since left (resp. right) multiplication is weakly continuous, $\overline M^\text{wot} \subseteq M''$. The weak topology has the largest closure, so we get the same containment for the other three topologies. On the other hand, the ultrastrong topology has the smallest closure, so to finish we just need to show $M'' \subseteq \overline{M}^\text{usot}$. That is, we must show that for any $T \in M''$, the effect of $T$ on an infinite list of vectors is approximately the same as the effect of some $S \in M$.  
+</p>
+
+
+<p>
+Note that $M$ and $M''$ have exactly the same invariant subspaces. This follows from:
+<ol>
+<li> For any subset $S$ of a ring, we have $S'''=S'$ (combine the fact that $S \mapsto S'$ reverses containment with the fact that $S \mapsto S''$ enlarges sets). 
+<li> For $S$ a $*$-closed subset of $B(H)$,  a closed subspace of $H$ is $S$-invariant if and only if the corresponding projection belongs to $S'$.
+</ol>
+</p>
+
+<p> In particular, $\overline{Mv}$ is $M''$-invariant for any $v \in H$, i.e. $Tv \in \overline{Mv}$ when $T \in M''$. This says precisely that, for any $T \in M''$, $Tv$ is arbitrarily well approximated by $Sv$ for $S \in M$. 
+</p>
+
+<p>The rest follows from a generally useful inflation trick. The idea is this: if we want $T \in M''$ to be approximated by $S \in M$ on a list of $n$ vectors $v_1,\ldots,v_n$, we consider the diagonal action of $M$ on $H^n$ and the vector $(v_1,\ldots,v_n) \in H^n$. Since we are interested in the ultrastrong operator topology, need to take an infinite inflation, considering the diagonal action of $M$ on $B(H^\infty)$. Let $N \subseteq B(H^\infty)$ be the diagonally embedded copy of $M$. It is easy to check that $N'$ is the subalgebra of $B(H^\infty)$ whose blocks belong to $M'$ and likewise that $N''$ is the diagonally embedded copy of $M''$ in $B(H^\infty)$. Then, by the above paragraph applied to $N''$, for any $T \in M''$ and any $v=(v_1,v_2,\ldots) \in H^\infty$, there is an $S \in M$ such that $\sum_{n=1}^\infty \|(S-T)v_n\|$ is arbitrarily small, which is what is needed.$\square$
+</p>
+
+<h4> 
+Definition of a von Neumann algebra 
+</h4>
+
+<p>
+A von Neumann algebra is a C*-subalgebra $M$ of $B(H)$ which is furthermore closed in the strong operator topology. By the bicommutant theorem, we get the same definition if we change "strong" to "weak", "ultrastrong", or "ultraweak". Likewise, we can consider them as  C*-subalgebras $M$ which are equal to their own double commutant. Since, as was noted earlier, $S'''=S'$ always holds, $M=S'$ is von Neumann algebra for any $*$-closed set of operators $S$. 
+
+<p>In von Jones's notes, it is also stipulated that $1 \in M$, but this is not a super big deal. Without this condition, there is still going to be a largest projection $p \in M$ and $M$ will sit in the corner $pB(H)p$, which has unit $p$. </p>
+
+
+
+<h4>
+Discussion of "intrinsic definitions" 
+</h4>
+
+<p>
+A <i>W*-algebra</i> is a C*-algebra $W$ whose underlying Banach space has a predual, i.e. $W$ is isometric to $X^\text{dual}$ for some Banach space $X$. It is a theorem that W*-algebras are precisely the C*-algebras which can be made to sit in some $B(H)$ as a von Neumann algebra. It turns out the predual is unique, in some sense, so that a W*-algebra has a well-defined weak-$*$ topology. In case of an embedded  $W  \subseteq B(H)$, the weak-$*$ algebra coincides with the ultraweak toplogy. This brings out the fact that ultraweak topology is intrinsic; it does not depend on the particular embedding. The strong and weak topologies, though convenient to work with, are <i>not</i> intrinsic. Indeed, we know that, when $M  \subseteq B(H)$ is embedded diagonally into $B(H^\infty)$, the resulting strong and weak topologies are the ultrastrong and ultraweak topologies of the original $M$.
+</p>
+
+<h4>Von Neumann algebra of a discrete group</h4>
+
+<p>
+Given a discrete group $\Gamma$, consider the von Neumann algebra $vN(\Gamma)$ on $\ell^2(\Gamma)$ generated by all the left translation operators $U_\gamma$, where $U_\gamma$ sends $\epsilon_\rho \mapsto \epsilon_{\gamma\rho}$.  As a matrix indexed by $\Gamma \times \Gamma$, $U_\gamma$ has a $1$ in every $(\gamma \rho, \rho)$ position and zeros elsewhere. We may characterize $vN(\Gamma)$ as the collection of all  operators whose matrix coefficients are constant along every "diagonal" $\{ (\gamma \rho, \rho) : \rho \in \Gamma\}$, that is to say every  orbit of the <i>right</i> action of $\Gamma$ on $\Gamma \times \Gamma$. This is also the same as saying that $vN(\Gamma)$ coincides with the commutant of  the ($*$-closed) set of right-translation operators. One may take the viewpoint that there are two von Neumann algebras of $\Gamma$, a left one and a right one, each the commutant of the other.
+</p>
+
+<p><a href="WLS.html">Back to seminar page</a></p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Meeting 7</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+
+<body>
+
+<a name="top"></a>
+<h1>Meeting 7: Michael Francis</h1>
+
+
+<p><a href="WLS.html">Back to seminar page</a></p>
+
+
+
+<h4>Cesaro averages for $\mathbb{B}(H)$</h4>
+
+<p>
+Let $[a_{ij}]_{i,j \geq 0}$ be the matrix of bounded operator $T$ on $\ell^2= \ell^2(\mathbb{N})$. For each  $n \in \mathbb{Z}$, let $\Phi_n(T) \in \mathbb{B}(\ell^2)$ be the restriction of $T$ to the $n$th diagonal. Specifially, the $(i,j)$ entry of the matrix of $\Phi_n(T)$ is  $a_{ij}$ wherever $i-j=n$ and $0$ everywhere else. Thus, for example: 
+$$
+\begin{matrix}
+\Phi_0(T) = 
+\begin{bmatrix}
+a_{00} & 0      & 0      & 0      & 0      & \ldots \\
+0      & a_{11} & 0      & 0      & 0      & \ldots \\
+0      & 0      & a_{22} & 0      & 0      & \ldots \\
+0      & 0      & 0      & a_{33} & 0      & \ldots \\
+0      & 0      & 0      & 0      & a_{44} & \ldots \\
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots \\
+\end{bmatrix}
+&&&
+\Phi_2(T) = 
+\begin{bmatrix}
+0      & 0      & 0      & 0      & 0      & \ldots \\
+0      & 0      & 0      & 0      & 0      & \ldots \\
+a_{20} & 0      & 0      & 0      & 0      & \ldots \\
+0      & a_{31} & 0      & 0      & 0      & \ldots \\
+0      & 0      & a_{42} & 0      & 0      & \ldots \\
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots \\
+\end{bmatrix}.
+&&&
+\Phi_{-1}(T)=
+\begin{bmatrix}
+0 & a_{01} & 0      & 0      & 0      & \ldots \\
+0 & 0      & a_{12} & 0      & 0      & \ldots \\
+0 & 0      & 0      & a_{23} & 0      & \ldots \\
+0 & 0      & 0      & 0      & a_{34} & \ldots \\
+0 & 0      & 0      & 0      & 0      & \ldots \\
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots \\
+\end{bmatrix}.
+\end{matrix}
+$$
+Notice that $\|\Phi_n(T)\| \leq \|T\|$ for all $n \in \mathbb{Z}$. Indeed, $\|\Phi_n(T)\| = \sup_{i-j=n} |a_{ij}|$. This is obvious if $n=0$, in which case $\Phi_0(T)$ is an honest diagonal matrix. For nonzero $n$, the same formula for the norm follows from expressing $\Phi_n(T)$ as the product of (a power of) the  unilateral shift (or its adjoint) and an honest diagonal matrix.
+</p> 
+
+
+
+
+<p>
+In a naive sense, any $T \in \mathbb{B}(\ell^2)$ can be expressed as a formal summation
+$$T = \sum_{n \in \mathbb{Z}} \Phi_n(T)$$
+where the right hand side at least makes sense as a formula for the matrix of $T$. It is natural to wonder:  "Does this formal summation converge to $T$?". Generally, the answer is: "No, not really". However, it turns out that, as in classical Fourier analysis, by performing a Cesaro averaging process, we do get the convergence. </p>
+
+
+<p>
+<b>Defintion 7.1:</b> Given  $T \in \mathbb{B}(\ell^2)$ and $N \geq 0$, we define:
+<ul>
+<li> The $N$th partial sum: $S_N(T)=\sum_{n=-N}^N  \Phi_n(T)$
+<li> The $N$th Cesaro sum: $\Sigma_N(T)=\tfrac{1}{N+1}\sum_{n=0}^N S_n(T)=\sum_{n=-N}^N \left(1-\tfrac{|n|}{N+1} \right) \Phi_n(T)$
+</ul>
+</p>
+
+
+<p>
+In general, the partial sums $S_N(T)$ behave poorly. They do not converge to $T$ in any standard topology and the operator norms $\|S_N(T)\|$ can grow without bound. However, the Cesaro sums behave perfectly well. This is described in the following proposition:
+</p>
+
+<p>
+<b>Proposition 7.2:</b> Let $T \in B(\ell^2(\mathbb{N}))$ be arbitrary. Then, the Cesaro sums $\Sigma_N(T)$ (defined above) satisfy:
+<ol>
+<li> $\Sigma_N(T) \to T$ in s.o.t. as $N \to \infty$
+<li> $\|\Sigma_N(T)\| \leq \|T\|$ for all $N$. 
+</ol>
+</p>
+
+<p>This is a special case of Lemma 1.1 in the paper <i>Invariant subspaces and hyper-reflexivity for free semigroup algebras</i> by Davidson and Pitts. However, the proof is not given there. For the proof, we can follow the outline of Theorem VIII.2.2 in Davidson's book <i>C*-algebras by Example</i>.
+</p>
+
+
+<p>The key to proving Proposition 7.2 is to express $T \mapsto \Phi_n(T)$, introduced above as a rather brutal operation on the matrix of $T$, in a more useful way in order that we may connect things to classical Fourier analysis. Let $X$ the unbounded diagonal matrix $\mathrm{diag}(0,1,2,3,\ldots)$. Correspondingly, we have the s.o.t.-continuous 1-parameter unitary group $$e^{itX}=\begin{bmatrix}
+1 & 0    & 0      &    0   &  \\
+0 &e^{it}& 0      &    0   & \\
+0 &  0   &e^{i2t} &    0   & \\
+0 &  0   &0       &e^{i3t} & \\
+  &      &        &        & \ddots \\
+\end{bmatrix}$$
+One may check that
+$$\Phi_0(T) = \tfrac{1}{2\pi}\int_{-\pi}^\pi e^{-itX} T e^{itX} \ dt$$
+where the integral is intended to be s.o.t. convergent. Roughly speaking, the point is that the matrix of $e^{-itX}T e^{itX}$ looks the same as the matrix of $T$, except that the entries on the $n$th diagonal are multiplied by $e^{-int}$. Thus, averaging over $t \in [-\pi,\pi]$, all entries become zero, except those on the main diagonal.
+</p>
+
+<p>
+Similarly, we may achieve any $\Phi_n(t)$ via the following integral:
+$$\Phi_n(T)=\tfrac{1}{2 \pi} \int_{-\pi}^\pi e^{int} e^{-itX} T e^{itX} \ dt$$
+since the entries of $e^{int} e^{-itX} T e^{itX}$ will have nontrivial phase on every diagonal except for the $n$th one.
+</p>
+
+<p>
+Now we can make contact with classical Fourier analysis. Quite generally,  any $\mathbb{C}$-linear combination $\sum_{n=-N}^N \lambda_n \Phi_n$ of the operations $\Phi_n$ is going to be given by
+$$\sum_{n=-N}^N \lambda_n \Phi_n(T) = \frac{1}{2\pi} \int_{-\pi}^\pi f(t) e^{-itX}T e^{itX} \ dt$$
+where
+$$f(t)=\sum_{n=-N}^N \lambda_n e^{int}.$$
+In particular, taking $\lambda_n=1-\frac{|n|}{N+1}$, we get that
+$$\Sigma_N(T) = \frac{1}{2\pi} \int_{-\pi}^\pi \sigma_N(t) e^{-itX} T e^{itX} \ dt$$
+where 
+$$\sigma_N(t)=\sum_{n=-N}^N \left(1-\tfrac{|n|}{N+1} \right)e^{int}$$
+are the classical <i>Fejér kernel functions</i> whose properties include:
+<ol>
+<li> $\int_{-\pi}^\pi \sigma_N(t) \ dt = 1$ (obvious)
+<li> $\sigma_N(t) \geq 0$ everywhere (not obvious)
+<li> $\sigma_N(t) \to 0$ uniformly on any deleted neighbourhood $[-\pi,-\epsilon) \cup (\epsilon,\pi]$. 
+</ol>
+From the positivity and the fact that $\frac{1}{2\pi} \int \sigma_N = 1$, we have that $\|\sigma_N\|_{L^1}=1$ whence $\|\Sigma_N(T)\| \leq \|T\|$ by an easy estimate. Thus, we have the second part of Proposition 7.2. For the first part, i.e. the fact that $\Sigma_N(T) \to T$ in s.o.t., one uses the Dirac delta-like properties of the Fejér kernels.
+</p>
+
+<h4>Relevance to the Kaplansky density theorem</h4>
+
+<p>
+As a corollary of Proposition 7.2, we obtain ways of concretely realizing the approximations in the Kaplansky density theorem in certain situations. Suppose that $A \subseteq \mathbb{B}(\ell^2)$ is some algebra whose s.o.t. closure is $M$. In some circumstances, it may by the case that $\Phi_n(T) \in A$ whenever $T \in M$. If this occurs, then the Cesaro averages $\Sigma_N(T)$ faciliate a sequence of operators in $A$, norm-bounded by $\|T\|$ and converging s.o.t. to $T \in M$. This happens occasionally, even for non-self-adjoint algebras $A$. For example, we can consider $A$ to be the (non-self-adjoint) algebra consisting of all finite linear combinations of the unilateral shift. Pretty clearly, the s.o.t. closure of $A$ is going to be contained in the bounded operators having lower triangular matrices which are constant along diagonals. Evidently, applying $\Phi_n$ to such an operator will map us back into $A$. 
+</p>
+
+
+
+
+<p><a href="WLS.html">Back to seminar page</a></p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
