@@ -6,9 +6,9 @@ title: Teaching
 
 Math 310: Real Analysis, MacEwan University, Fall 2025 
 
-Please sign in to mêskanâs to access course materials.
+Please sign in to Mêskanâs to access course materials.
 
-#### Past Teaching Experience
+#### Past Teaching
 
 * Math 398: Independent Study: Group Theory,	MacEwan University, Spring 2025
 * Math 2156: Number Theory and Graph Theory, University of Western Ontario, Spring 2024
