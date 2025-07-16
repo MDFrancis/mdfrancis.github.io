@@ -29,7 +29,7 @@
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
 
-  <header style="display: flex; justify-content: space-between; align-items: center;">
+  <header style="display: flex; justify-content: space-between; align-items: right;">
   <!-- LEFT: Your Name -->
   <a href="{{ "/" | relative_url }}" class="title" style="text-decoration: none;">
     {{ site.title | escape }}
