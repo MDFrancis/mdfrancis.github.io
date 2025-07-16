@@ -29,12 +29,14 @@
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
 
-<header>
-  <a href="{{ "/" | relative_url }}" class="title" style="display: flex; align-items: center; gap: 10px;">
-    <img src="/assets/macewanlogo.png" alt="University Logo" style="height: 40px;">
-    <span>{{ site.title | escape }}</span>
+  <header style="display: flex; justify-content: space-between; align-items: center;">
+  <!-- LEFT: Your Name -->
+  <a href="{{ "/" | relative_url }}" class="title" style="text-decoration: none;">
+    {{ site.title | escape }}
   </a>
-  {% include menu.html menu=pages %}
+
+  <!-- RIGHT: University Logo -->
+  <img src="/assets/macewanlogo.png" alt="MacEwan University Logo" style="height: 40px;">
 </header>
 
 {{ content }}
