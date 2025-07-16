@@ -1,6 +1,7 @@
 title: "Michael Francis"
 author: "Michael Francis"
-description: "MacEwan University"
+description: >
+ <img src="/assets/macewanlogo.png" alt = "Mac Ewan University Logo" style="height: 40px;">
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
